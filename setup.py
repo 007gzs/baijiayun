@@ -17,7 +17,6 @@ from codecs import open
 from os import path
 import sys
 
-
 here = path.abspath(path.dirname(__file__))
 
 
@@ -47,7 +46,7 @@ with open(path.join(here, 'README.rst'), encoding='utf-8') as f:
     long_description = f.read()
 
 with open('requirements.txt') as f:
-    requirements = [l for l in f.read().splitlines() if l]
+    requirements = [line for line in f.read().splitlines() if line]
 
 setup(
     name='baijiayun',
@@ -73,7 +72,7 @@ setup(
         'Programming Language :: Python :: 3.6',
         'Programming Language :: Python :: 3.7',
     ],
-    packages=find_packages(exclude=('tests', )),
+    packages=find_packages(exclude=('tests',)),
     install_requires=requirements,
     zip_safe=False,
     include_package_data=True,
