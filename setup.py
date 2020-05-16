@@ -50,7 +50,7 @@ with open('requirements.txt') as f:
 
 setup(
     name='baijiayun',
-    version='1.0.0',
+    version='1.0.1',
     keywords='baijiayun, SDK, 百家云',
     description='BaiJiaYun SDK for Python',
     long_description=long_description,
