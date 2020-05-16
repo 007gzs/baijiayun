@@ -2,6 +2,12 @@ Changelog
 ================
 
 
+Version 1.0.1
+------------------
++ get_web_sign 直播进教室签名的计算
++ check_sign 用于回调接口签名验证
++ private_domain 非必填
+
 Version 1.0.0
 ------------------
 + 文档
